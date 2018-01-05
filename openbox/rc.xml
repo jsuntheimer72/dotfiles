@@ -49,7 +49,7 @@
 </placement>
 
 <theme>
-  <name>Clearlooks</name>
+  <name>Windows-10</name>
   <titleLayout>NLIMC</titleLayout>
   <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -128,8 +128,8 @@
 
        use obconf if you want to change these without having to log out
        and back in -->
-  <number>4</number>
-  <firstdesk>1</firstdesk>
+  <number>5</number>
+  <firstdesk>3</firstdesk>
   <names>
     <!-- set names up here if you want to, like this:
     <name>desktop 1</name>
@@ -164,10 +164,10 @@
      Many programs reserve space automatically, but you can use this in other
      cases. -->
 <margins>
-  <top>0</top>
-  <bottom>0</bottom>
-  <left>0</left>
-  <right>0</right>
+  <top>1</top>
+  <bottom>1</bottom>
+  <left>1</left>
+  <right>1</right>
 </margins>
 
 <dock>
@@ -199,6 +199,7 @@
   <keybind key="C-A-Right">
     <action name="GoToDesktop"><to>right</to><wrap>no</wrap></action>
   </keybind>
+<!-- 
   <keybind key="C-A-Up">
     <action name="GoToDesktop"><to>up</to><wrap>no</wrap></action>
   </keybind>
@@ -232,6 +233,7 @@
   <keybind key="W-d">
     <action name="ToggleShowDesktop"/>
   </keybind>
+-->
 
   <!-- Keybindings for windows -->
   <keybind key="A-F4">
@@ -245,10 +247,13 @@
   <keybind key="A-space">
     <action name="ShowMenu"><menu>client-menu</menu></action>
   </keybind>
-  <!-- Take a screenshot of the current window with scrot when Alt+Print are pressed -->
+
+  <!-- TODO -->
+  <!-- Take a screenshot of the current window with scrot when Alt+Print are pressed
   <keybind key="A-Print">
     <action name="Execute"><command>scrot -s</command></action>
   </keybind>
+  -->
 
   <!-- Keybindings for window switching -->
   <keybind key="A-Tab">
@@ -303,6 +308,7 @@
   </keybind>
 
   <!-- Keybindings for running applications -->
+<!--
   <keybind key="W-e">
     <action name="Execute">
       <startupnotify>
@@ -312,12 +318,14 @@
       <command>kfmclient openProfile filemanagement</command>
     </action>
   </keybind>
-  <!-- Launch scrot when Print is pressed -->
+  <!-- Launch scrot when Print is pressed
   <keybind key="Print">
     <action name="Execute"><command>scrot</command></action>
   </keybind>
+-->
 </keyboard>
 
+<!-- TODO -->
 <mouse>
   <dragThreshold>1</dragThreshold>
   <!-- number of pixels the mouse must move before a drag begins -->
