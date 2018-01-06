@@ -308,7 +308,6 @@
   </keybind>
 
   <!-- Keybindings for running applications -->
-<!--
   <keybind key="W-e">
     <action name="Execute">
       <startupnotify>
