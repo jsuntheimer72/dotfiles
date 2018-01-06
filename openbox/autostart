@@ -12,6 +12,6 @@
 #  gnome-settings-daemon &
 #fi
 
-# If you want to use XFCE config tools...
+# Provisionally use tint2 as a panel
 #
-#xfce-mcs-manager &
+tint2 &
