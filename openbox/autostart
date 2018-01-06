@@ -15,3 +15,5 @@
 # Provisionally use tint2 as a panel
 #
 tint2 &
+volumeicon &
+compton ~/.config/compton/compton.conf &
