@@ -16,4 +16,4 @@
 #
 tint2 &
 volumeicon &
-compton ~/.config/compton/compton.conf &
+compton --config ~/.config/compton/compton.conf &
