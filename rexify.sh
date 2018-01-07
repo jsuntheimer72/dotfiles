@@ -25,6 +25,12 @@ tar xvf micro.tar.gz
 cp micro-1.3.4/micro /usr/local/bin
 cd ~
 
+cd /home/guest/Downloads
+wget http://fossil-scm.org/index.html/uv/fossil-linux-x64-2.4.tar.gz
+tar xvf fossil-linux-x64-2.4.tar.gz
+mv fossil /usr/local/bin
+cd ~
+
 #endotify & conflagration
 update-alternatives --set x-terminal-emulator /usr/bin/xterm
 cd /home/guest/Downloads
