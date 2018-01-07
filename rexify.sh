@@ -42,16 +42,19 @@ echo "deb http://deb.debian.org/debian unstable main non-free contrib" > /etc/ap
 apt update
 apt -t unstable install -y tcl8.6 tk8.6 tcl-expect tcllib tklib tkcon
 apt -t unstable install -y fonts-roboto fonts-roboto-hinted fonts-font-awesome 
-
-mkdir -p ~/.themes/Windows-10
-mkdir ~/.themes/Windows-10-Dark
+wget https://assets.ubuntu.com/v1/fad7939b-ubuntu-font-family-0.83.zip
+unzip fad7939b-ubuntu-font-family-0.83.zip
+mkdir /root/.fonts
+mv ubuntu-font-family-0.83/*.ttf ~/.fonts/
+mkdir -p /root/.themes/Windows-10
+mkdir /root/.themes/Windows-10-Dark
 cd /root/.config
 unzip Windows-10-master.zip
 unzip Windows-10-Dark-master.zip
-cp -r Windows-10-master/openbox-3 ~/.themes/Windows-10/
-cp -r Windows-10-Dark-master/openbox-3 ~/.themes/Windows-10-Dark/
-cp -r Windows-10-master/tint2 ~/.themes/Windows-10
-cp -r Windows-10-Dark-master/tint2 ~/.themes/Windows-10-Dark/
+cp -r Windows-10-master/openbox-3 /root/.themes/Windows-10/
+cp -r Windows-10-Dark-master/openbox-3 /root/.themes/Windows-10-Dark/
+cp -r Windows-10-master/tint2 /root/.themes/Windows-10
+cp -r Windows-10-Dark-master/tint2 /root/.themes/Windows-10-Dark/
 cd ~
 
 ###conflagration
