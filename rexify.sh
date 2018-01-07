@@ -41,6 +41,8 @@ mv /root/.config/preferences /etc/apt/preferences
 echo "deb http://deb.debian.org/debian unstable main non-free contrib" > /etc/apt/sources.list.d/sid.list
 apt update
 apt -t unstable install -y tcl8.6 tk8.6 tcl-expect tcllib tklib tkcon
+apt -t unstable install -y fonts-roboto fonts-roboto-hinted fonts-font-awesome 
+
 mkdir -p ~/.themes/Windows-10
 mkdir ~/.themes/Windows-10-Dark
 cd /root/.config
