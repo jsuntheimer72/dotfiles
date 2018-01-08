@@ -42,15 +42,12 @@ fi
 cp -r dotfiles-master/* /root/.config
 echo "xrdb -merge ~/.config/Xresources/.Xresources &" > /root/.xinitrc
 echo "exec openbox-session" >> /root/.xinitrc
-cat < /root/.config/bash/.bashrc > /root/.bashrc
 mv /root/.config/preferences /etc/apt/preferences
 echo "deb http://deb.debian.org/debian unstable main non-free contrib" > /etc/apt/sources.list.d/sid.list
 apt update
 apt -t unstable install -y tcl8.6 tk8.6 tcl-expect tcllib tklib tkcon
-apt -t unstable install -y fonts-roboto fonts-roboto-hinted fonts-font-awesome 
-wget https://assets.ubuntu.com/v1/fad7939b-ubuntu-font-family-0.83.zip
-unzip fad7939b-ubuntu-font-family-0.83.zip
-mv ubuntu-font-family-0.83 /usr/share/fonts/truetype
+apt -t unstable install -y fonts-oxygen fonts-font-awesome 
+#mv ubuntu-font-family-0.83 /usr/share/fonts/truetype
 fc-cache -v
 mkdir -p /root/.themes/Windows-10
 mkdir /root/.themes/Windows-10-Dark
@@ -62,6 +59,7 @@ cp -r Windows-10-Dark-master/openbox-3 /root/.themes/Windows-10-Dark/
 cp -r Windows-10-master/tint2 /root/.themes/Windows-10
 cp -r Windows-10-Dark-master/tint2 /root/.themes/Windows-10-Dark/
 cd ~
+
 
 ###conflagration
 
